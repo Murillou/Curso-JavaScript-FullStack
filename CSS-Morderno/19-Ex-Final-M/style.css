@@ -1,0 +1,265 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+}
+
+#header{
+  background-color: #444040;
+  padding: 4%;
+}
+
+#menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#logo-obc{
+  width: 60%;
+}
+
+.buttons{
+  border-bottom: 2px solid transparent;
+  color: #fff;
+}
+
+.buttons:hover{
+  border-bottom: 2px solid rgb(32, 31, 31);
+  transition: 0.5s;
+}
+
+#main-content{
+  padding: 4%;
+}
+
+#div-title{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+  margin-top: 3%;
+}
+
+#title{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#text{
+  font-size: 16px;
+}
+
+.itens{
+  border: 2px solid transparent;
+  width: 50%;
+}
+
+.itens:hover{
+  border: 2px solid black ;
+  border-radius: 10px;
+}
+
+.images{
+  width: 100%;
+  border-radius: 10px;
+}
+
+#grid{
+  display: grid;
+  grid-template-areas: 
+  "item1"
+  "item2"
+  "item3"
+  "item4"
+  "item5"
+  "item6"
+  "item7"
+  "item8"
+  "item9";
+  place-items: center;
+  gap: 10px;
+}
+
+.item1{
+  grid-area: item1;
+}
+.item2{
+  grid-area: item2;
+}
+.item3{
+  grid-area: item3;
+}
+.item4{
+  grid-area: item4;
+}
+.item5{
+  grid-area: item5;
+}
+.item6{
+  grid-area: item6;
+}
+.item7{
+  grid-area: item7;
+}
+.item8{
+  grid-area: item8;
+}
+.item9{
+  grid-area: item9;
+}
+
+#flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 3%;
+  padding: 1%;
+  background-color: #444040;
+  color: white;
+}
+
+#title-flex{
+  margin-top: 4%;
+}
+
+.img-flex{
+   width: 100%;
+   border-radius: 7px;
+}
+
+.itens-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: solid 1px transparent;
+  width: 70%;
+}
+
+.itens-flex:hover{
+  border: solid 1px #fff;
+  border-radius: 7px;
+}
+
+.paragraph{
+  padding: 5%;
+}
+
+#footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #444040;
+  padding: 4%;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width: 1000px){
+
+  .itens-flex{
+    text-align: center;
+  }
+
+  .buttons{
+    padding: 4%;
+  }
+
+  #logo-obc{
+    width: 30%;
+  }
+
+  #menu{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #footer{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #grid{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "item1 item2 item3"
+    "item4 item5 item6"
+    "item7 item8 item9" !important;
+    place-items: start;
+    gap: 0;
+  }
+
+  .itens{
+    width: 98% !important;
+  }
+
+  .item9{
+    place-self: auto !important;
+  }
+
+}
+
+@media (min-width: 900px){
+
+  .images{
+    height: 30vh;
+  }
+
+  .item9{
+    place-self: center;
+  }
+  
+  #grid{
+    grid-template-areas: 
+    "item1 item2"
+    "item3 item4"
+    "item5 item6"
+    "item7 item8"
+    "item9 item9";
+  }
+}
+
+@media (min-width: 680px){
+
+
+  .itens{
+    width: 80%;
+  }
+  
+  #main-content{
+    display: flex;
+  }
+
+  #flex{
+    margin: 0;
+    flex: 1 0 300px;
+    max-height: 205vh;
+  }
+
+}
+
+@media (min-width: 556px){
+
+  #div-buttons{
+    display: flex;
+    gap: 15px;
+  }
+
+}

@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  background-color: rgb(204, 224, 241);
+  min-height: 100vh;
+  display: flex;
+  gap: 0px 15px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item{
+  width: 175px;
+  height: 175px;
+  border: 2px solid black;
+  background-color: #ffffff;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

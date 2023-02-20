@@ -1,0 +1,21 @@
+h1{
+  color: purple;
+  font-size: 50px;
+  border: 2px solid red;
+}
+
+body{
+  background-color: #fefefe;
+}
+
+li{
+  color: green;
+}
+
+.moon{
+  color: royalblue;
+}
+
+#grande{
+  font-size:70px;
+}
